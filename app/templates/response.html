@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+{{ super() }}
+	<style>
+		body { background: #e8f1f9; }
+	</style>
+{% endblock %}
+
+
+{% block title %}
+Middesk Tool
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+<div class="container">
+    
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+
+      <h1 class="pt-5 pb-2">Middesk FLASK</h1>
+
+      <p class="lead">Thank you for providing the information we requested! Please check the businesses page for your application. Here is the response from the submission:</p>
+
+      <p class="lead">{{ result }}</p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
